@@ -1,0 +1,71 @@
+{
+	"name": "cds-csv-generator",
+	"displayName": "CAP CDS CSV Generator",
+	"description": "CAP CDS CSV Generator",
+	"version": "0.0.1",
+	"publisher": "ozgurkadir",
+	"author": "Kadir Özgür",
+	"icon": "icon.png",
+	"preview": true,
+	"keywords": [
+		"SAP",
+		"CAP",
+		"CAPM",
+		"CSV"
+	],
+	"galleryBanner": {
+		"color": "#C80000",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "cds-csv-generator.createCSV",
+				"title": "Generate CSV Files"
+			},
+			{
+				"command": "cds-csv-generator.csnFile",
+				"title": "Select CSN File"
+			},
+			{
+				"command": "cds-csv-generator.csvFolder",
+				"title": "Select CSV Folder"
+			},
+			{
+				"command": "cds-csv-generator.enterNamespace",
+				"title": "Select Namespace"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.46.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	},
+	"dependencies": {
+		"csv": "^5.3.2",
+		"json2csv": "^5.0.6",
+		"uuid": "^8.3.2"
+	}
+}
