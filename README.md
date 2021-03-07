@@ -10,6 +10,14 @@ Random strings come from `mock-data/mockStrings.json` file.
 
 > ATTENTION: This early preview version does not support all data types and features of  [Definition Language (CDL)](https://cap.cloud.sap/docs/cds/cdl) yet.
 
+## SWAPI App Demo
+> INFO: The sample app that used in this demo is : [https://github.com/SAP-samples/cloud-cap-hana-swapi](https://github.com/SAP-samples/cloud-cap-hana-swapi). This awesome and quite complex application is really good choice to try this extension.
+
+<p align="center">
+<img src="demo/cds-csv-generator.gif" width=100%>
+<br/>
+</p>
+
 ## How to Use
 
 1. Bring up Command Palette(`Ctrl+Shift+P`) and type `Generate CSV Files` :keyboard: 

@@ -2,11 +2,15 @@
 	"name": "cds-csv-generator",
 	"displayName": "CAP CDS CSV Generator",
 	"description": "CAP CDS CSV Generator",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"publisher": "ozgurkadir",
 	"author": "Kadir Özgür",
 	"icon": "icon.png",
 	"preview": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ozgurkadir/vscode-cds-csv-generator"
+	},	
 	"keywords": [
 		"SAP",
 		"CAP",
