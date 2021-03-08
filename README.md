@@ -14,7 +14,7 @@ Random strings come from `mock-data/mockStrings.json` file.
 > INFO: The sample app that used in this demo is : [https://github.com/SAP-samples/cloud-cap-hana-swapi](https://github.com/SAP-samples/cloud-cap-hana-swapi). This awesome and quite complex application is really good choice to try this extension.
 
 <p align="center">
-<img src="demo/cds-csv-generator.gif" width=100%>
+<img src="https://github.com/ozgurkadir/vscode-cds-csv-generator/raw/main/demo/cds-csv-generator.gif" width=100%>
 <br/>
 </p>
 

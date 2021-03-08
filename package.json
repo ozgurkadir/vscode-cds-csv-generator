@@ -2,7 +2,7 @@
 	"name": "cds-csv-generator",
 	"displayName": "CAP CDS CSV Generator",
 	"description": "CAP CDS CSV Generator",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "ozgurkadir",
 	"author": "Kadir Özgür",
 	"icon": "icon.png",
