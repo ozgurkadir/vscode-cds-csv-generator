@@ -14,6 +14,7 @@ const isProjection = x => x.$syntax !== 'projection' ? true : false
 const isView = x => x.$syntax !== 'view' ? true : false
 const isSAPCommonNamespce = x => x.includes("sap.common") ? false : true
 const isStartsWithNamespace = x => x.startsWith(namespace.nameSpace) ? true : false
+const isPersistenceSkip = x => x["@cds.persistence.skip"] !== true ? true : false
 
 
 module.exports = {
@@ -22,5 +23,6 @@ module.exports = {
     isView,
     isSAPCommonNamespce,
     isStartsWithNamespace,
+    isPersistenceSkip,
     namespace
 }

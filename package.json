@@ -2,7 +2,7 @@
 	"name": "cds-csv-generator",
 	"displayName": "CAP CDS CSV Generator",
 	"description": "CAP CDS CSV Generator",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"publisher": "ozgurkadir",
 	"author": "Kadir Özgür",
 	"icon": "icon.png",
@@ -10,7 +10,7 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ozgurkadir/vscode-cds-csv-generator"
-	},	
+	},
 	"keywords": [
 		"SAP",
 		"CAP",
@@ -49,7 +49,22 @@
 				"command": "cds-csv-generator.enterNamespace",
 				"title": "Select Namespace"
 			}
-		]
+		],
+		"configuration": {
+			"title": "CAP CDS CSV Configuration",
+			"properties": {
+				"capCdsCsv.commonEntities": {
+					"type": "boolean",
+					"default": false,
+					"markdownDescription": "Create sap.common entities (Countries, Currencies, Languages)"
+				},
+				"capCdsCsv.numberOfRows": {
+					"type": "number",
+					"default": 10,
+					"markdownDescription": "The number of rows to be generated"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"lint": "eslint .",
@@ -69,6 +84,7 @@
 	},
 	"dependencies": {
 		"csv": "^5.3.2",
+		"fs-extra": "^9.1.0",
 		"json2csv": "^5.0.6",
 		"uuid": "^8.3.2"
 	}

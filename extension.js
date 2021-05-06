@@ -4,6 +4,8 @@ const vscode = require('vscode');
 const CSV = require('./src/createCsv')
 const entityDefinitionChecks = require('./src/entityDefinitionChecks')
 
+const csnfileOp = require('./src/csnFileOperations')
+
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 
@@ -14,7 +16,7 @@ function activate(context) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "cds-csv-generator" is now active!');
+	//console.log('Congratulations, your extension "cds-csv-generator" is now active!');
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with  registerCommand
@@ -40,12 +42,11 @@ function activate(context) {
 	}))
 
 	context.subscriptions.push(vscode.commands.registerCommand('cds-csv-generator.csnFile', (nameSpace) => {
-		//vscode.OpenDialogOptions
 		const option = { canSelectMany: false, title: "Please select csn file" };
 
 		vscode.window.showOpenDialog(option).then(fileUri => {
 			if (fileUri && fileUri[0]) {
-				const  csnFilePath = fileUri[0].fsPath
+				const csnFilePath = fileUri[0].fsPath
 				vscode.commands.executeCommand('cds-csv-generator.csvFolder', csnFilePath, nameSpace);
 			}
 		})
